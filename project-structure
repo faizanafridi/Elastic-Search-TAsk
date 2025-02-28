@@ -1,0 +1,33 @@
+movie-search/
+├── docker-compose.yml
+├── .env
+├── README.md
+├── backend/
+│   ├── Dockerfile
+│   ├── package.json
+│   ├── src/
+│   │   ├── app.js
+│   │   ├── config/
+│   │   │   └── config.js
+│   │   ├── controllers/
+│   │   │   └── movieController.js
+│   │   ├── models/
+│   │   │   └── Movie.js
+│   │   ├── routes/
+│   │   │   └── movieRoutes.js
+│   │   └── services/
+│   │       ├── elasticSearchService.js
+│   │       ├── movieService.js
+│   │       └── omdbService.js
+│   └── tests/
+│       └── movie.test.js
+└── frontend/
+    ├── Dockerfile
+    ├── package.json
+    └── src/
+        ├── App.js
+        ├── components/
+        │   ├── MovieCard.js
+        │   └── SearchBar.js
+        └── services/
+            └── api.js 
