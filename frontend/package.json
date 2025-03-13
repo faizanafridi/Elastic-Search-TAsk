@@ -2,6 +2,7 @@
   "name": "movie-search-frontend",
   "version": "0.1.0",
   "private": true,
+  "proxy": "http://nginx:80",
   "dependencies": {
     "@testing-library/user-event": "^13.5.0",
     "@types/jest": "^27.5.2",

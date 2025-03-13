@@ -110,20 +110,20 @@ flowchart TB
 1. Clone the repository:
 ```bash
 git clone <repository-url>
-cd movie-search
+cd Elastic-Search-TAsk
 ```
 
-2. Create `var.env` file from example:
+2. Create `.env` file from example:
 ```bash
-cp var.env.example var.env
+cp var.env.example .env
 ```
 
-3. Update the environment variables in `var.env`:
+3. Update the environment variables in `.env`:
 ```env
 # Required configurations
 OMDB_API_KEY=your_api_key_here
 REDIS_PASSWORD=your_secure_password
-!! Currently i have a fixed api key and password for redis.
+!! Currently I have added OMDB_API_KEY and REDIS_PASSWORD variables no need to add any change anything.
 ```
 
 4. Run the setup script (Linux/macOS):
@@ -157,7 +157,7 @@ The application will be available at:
 ```
 movie-search/
 ├── docker-compose.yml      # Docker services configuration
-├── var.env                 # Environment variables
+├── .env                 # Environment variables
 ├── backend/               
 │   ├── src/
 │   │   ├── controllers/   # Request handlers
@@ -221,15 +221,6 @@ cd frontend && npm test
 - MongoDB replica set for read scaling
 - NGINX load balancing
 - Response time optimization
-
-## Contributing
-
-1. Fork the repository
-2. Create your feature branch
-3. Commit your changes
-4. Push to the branch
-5. Create a Pull Request
-
 
 ## Using the Application
 
